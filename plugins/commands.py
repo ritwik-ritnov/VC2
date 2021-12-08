@@ -64,16 +64,6 @@ async def start(client, message):
                 [
                     [
                         InlineKeyboardButton(f"Play", callback_data='help_play'),
-                        InlineKeyboardButton(f"Settings", callback_data=f"help_settings"),
-                        InlineKeyboardButton(f"Recording", callback_data='help_record'),
-                    ],
-                    [
-                        InlineKeyboardButton("Scheduling", callback_data="help_schedule"),
-                        InlineKeyboardButton("Controling", callback_data='help_control'),
-                        InlineKeyboardButton("Admins", callback_data="help_admin"),
-                    ],
-                    [
-                        InlineKeyboardButton(f"Misc", callback_data='help_misc'),
                         InlineKeyboardButton("Close", callback_data="close"),
                     ],
                 ]
@@ -129,12 +119,11 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('Main Channel', url='https://t.me/movieZcafe38X'),
-            InlineKeyboardButton('Support Group', url='https://t.me/movieZcafe38X_Req_Zone'),
+            InlineKeyboardButton('Channel', url='https://t.me/movieZcafe38X'),
+            InlineKeyboardButton('Group', url='https://t.me/movieZcafe38X_Req_Zone'),
         ],
         [
-            InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
+            InlineKeyboardButton('Clossse!!', callback_data='close'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -149,17 +138,6 @@ async def show_help(client, message):
         [
             [
                 InlineKeyboardButton("Play", callback_data='help_play'),
-                InlineKeyboardButton("Settings", callback_data=f"help_settings"),
-                InlineKeyboardButton("Recording", callback_data='help_record'),
-            ],
-            [
-                InlineKeyboardButton("Scheduling", callback_data="help_schedule"),
-                InlineKeyboardButton("Controling", callback_data='help_control'),
-                InlineKeyboardButton("Admins", callback_data="help_admin"),
-            ],
-            [
-                InlineKeyboardButton("Misc", callback_data='help_misc'),
-                InlineKeyboardButton("Config Vars", callback_data='help_env'),
                 InlineKeyboardButton("Close", callback_data="close"),
             ],
         ]
@@ -184,7 +162,7 @@ async def show_help(client, message):
         disable_web_page_preview=True
         )
     #await delete_messages([message])
-@Client.on_message(filters.command(['repo', f"repo@{Config.BOT_USERNAME}"]))
+@Client.on_message(filters.command(['inbox', f"inbox@{Config.BOT_USERNAME}"]))
 async def repo_(client, message):
     buttons = [
         [

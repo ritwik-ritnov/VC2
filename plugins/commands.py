@@ -130,7 +130,7 @@ async def start(client, message):
     buttons = [
         [
             InlineKeyboardButton('Main Channel', url='https://t.me/movieZcafe38X'),
-            InlineKeyboardButton('Support Group', url='https://t.me/movieZcafe38X_Req_Zone')
+            InlineKeyboardButton('Support Group', url='https://t.me/movieZcafe38X_Req_Zone'),
         ],
         [
             InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
@@ -189,7 +189,7 @@ async def repo_(client, message):
     buttons = [
         [
             InlineKeyboardButton('Main Channel', url='https://t.me/movieZcafe38X'),
-            InlineKeyboardButton('Support Group', url='https://t.me/movieZcafe38X_Req_Zone')     
+            InlineKeyboardButton('Support Group', url='https://t.me/movieZcafe38X_Req_Zone'),   
         ],
         [
             InlineKeyboardButton("Support", url='https://t.me/Cafe_Req_Bot'),
